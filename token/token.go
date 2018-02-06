@@ -20,7 +20,7 @@ var keywords = map[string]TokenType{
 }
 
 func LookupIdent(ident string) TokenType {
-	if tok, ok := keywords[ident]; ok {
+	if tok, exist := keywords[ident]; exist {
 		return tok
 	}
 
